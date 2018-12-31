@@ -1,6 +1,5 @@
 sudo: false
 language: java
-script: "mvn cobertura:cobertura"
 
 cache:
   directories:
@@ -14,3 +13,5 @@ deploy:
     tags: true
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+script: "mvn cobertura:cobertura"
