@@ -6,7 +6,7 @@ cache:
 
 deploy:
   provider: script
-  script: "mvn clean install"
+  script: "mvn clean install -Dmaven.test.skip=true"
   skip_cleanup: true
   on:
     tags: true
