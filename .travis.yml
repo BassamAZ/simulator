@@ -11,4 +11,4 @@ deploy:
   on:
     tags: true
 after_success:
-  - export CODECOV_TOKEN="0c4e1500-1a2a-4907-987f-0de676cc2360"
+  - bash <(curl -s https://codecov.io/bash)
