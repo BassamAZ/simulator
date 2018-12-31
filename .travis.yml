@@ -1,5 +1,7 @@
 sudo: false
 language: java
+script: "mvn cobertura:cobertura"
+
 cache:
   directories:
   - "$HOME/.cache"
