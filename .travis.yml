@@ -10,3 +10,6 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
+
+ #TAG
+  - export CODECOV_TOKEN="0c4e1500-1a2a-4907-987f-0de676cc2360"
